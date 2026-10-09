@@ -1,0 +1,6 @@
+.DS_Store
+*.apk
+*.apk.sha256
+SHA256SUMS*.txt
+release-notes*.md
+.release-build-*/
