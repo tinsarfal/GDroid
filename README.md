@@ -3,7 +3,7 @@
 GDroid runs Garry's Mod natively on Android phones and tablets, with touch
 controls. Download the APKs from the [Releases](../../releases) page.
 
-Join our community on [Discord](https://discord.gg/rqxyuPxbNF) for support and
+Join our community on [Discord](https://discord.gg/hy2Zpm8XHn) for support and
 discussion.
 
 The APK does not include the retail game files. You need your own Steam copy of
