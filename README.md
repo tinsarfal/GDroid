@@ -30,8 +30,6 @@ manager when Android asks. You can also install it with adb:
 adb install -r GDroid-<version>.apk
 ```
 
-For a 32-bit ARM device, use the `-armv7.apk` file instead.
-
 Install updates over the existing app so Android keeps your saves and settings.
 Before updating, you can export your saves with
 **Settings & tools → Back up saves**.
@@ -41,10 +39,7 @@ content in shared storage.
 
 ### Update from the launcher
 
-The updater is under **Settings & tools → Updates**. When public release access
-is available, select **Check now**. The launcher finds the latest stable release
-and downloads the APK matching your installed ARM64 or ARMv7 version. Downloads
-can be paused and resumed.
+The updater is under **Settings & tools → Updates**.
 
 Select **Install update**, allow installs from GDroid in Android settings if
 asked, then return and select **Install update** again. Confirm Android's
@@ -53,8 +48,7 @@ before installing. Updating in place keeps your saves, settings, and game files.
 
 Automatic checks are off by default. Enable **Check for updates automatically**
 to check at most once a day when the launcher opens. Downloads and installation
-still start only when you choose them. The updater checks the download checksum,
-app identity, signing certificate, and Android build number before installation.
+still start only when you choose them.
 
 ## Add the game files
 
@@ -93,19 +87,7 @@ three game folders. This also works with supported SD card and USB storage.
 
 ### Copy the files into shared storage yourself
 
-Copy the three folders to `/sdcard/srceng/`. The result should look like this:
-
-```text
-/sdcard/srceng/garrysmod/garrysmod_dir.vpk
-/sdcard/srceng/garrysmod/gameinfo.txt
-/sdcard/srceng/sourceengine/hl2_misc_dir.vpk
-/sdcard/srceng/sourceengine/hl2_textures_dir.vpk
-/sdcard/srceng/platform/
-```
-
-Keep the complete folders, including every numbered VPK part beside its
-`*_dir.vpk` file. Copying just the directory VPK is not enough. PC `bin/` files
-are not used by GDroid.
+Copy the three folders to `/sdcard/srceng/`. When you are done, your srceng directory should contain the garrysmod, sourceengine, and platform folders.
 
 With adb, for example:
 
